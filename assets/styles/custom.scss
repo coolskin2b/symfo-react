@@ -2,6 +2,19 @@ $theme-colors: (
         "info": tomato,
         "danger": teal
 );
+$font-color : red;
+
+.jumbotron{
+  color: $font-color;
+};
+
+$margin-container: 2em auto;
+.container,rounded-circle{
+  margin: $margin-container;
+}
+h2{
+  padding: 1em;
+}
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";

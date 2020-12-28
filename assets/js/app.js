@@ -1,14 +1,17 @@
 // == Import : npm
 import React from 'react'
-import { render } from 'react-dom'
+import {render} from 'react-dom'
 
 import '../styles/app.scss';
 
 
 // import { Provider } from 'react-redux'
-
 // == Import : local
-import App  from './components/App'
+import App from './components/App'
+import Navigation from './components/Navigation'
+import Slider from "./components/Slider";
+import Marketing from "./components/Marketing";
+import Featurette from "./components/Featurette";
 // import store from 'src/store' redux
 
 // // == Render avec redux
@@ -20,7 +23,12 @@ import App  from './components/App'
 
 // == Render avec redux
 const rootComponent = (
-        <App />
+    <>
+        <Navigation/>
+        <Slider/>
+        <Marketing/>
+        <Featurette/>
+    </>
 )
 
 
